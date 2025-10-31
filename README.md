@@ -9,9 +9,24 @@ DSA/
 └── run-tests.sh  # Test runner script
 ```
 
-## How to Run Tests
+## How to Run Programs and Tests
 
-### Compile and Run a Test:
+### Run a Program (Easy!):
+```bash
+./run-program.sh <ProgramName>
+```
+
+Example:
+```bash
+./run-program.sh NodeBasics
+```
+
+See all available programs:
+```bash
+./run-program.sh
+```
+
+### Run Tests:
 ```bash
 ./run-tests.sh <TestClassName>
 ```
@@ -21,15 +36,14 @@ Example:
 ./run-tests.sh NodeBasicsTest
 ```
 
-### Manual Compilation and Execution:
+### Manual Compilation (if needed):
 ```bash
-# Compile source
+# Compile and run program
 javac -d . src/YourProgram.java
+java YourProgram
 
-# Compile test
+# Compile and run test
 javac -cp .:lib/junit-platform-console-standalone.jar -d . test/YourProgramTest.java
-
-# Run test
 java -jar lib/junit-platform-console-standalone.jar --class-path . --select-class YourProgramTest
 ```
 

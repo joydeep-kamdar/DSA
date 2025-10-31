@@ -44,9 +44,8 @@ This is where you start! Run these commands:
 # Navigate to the project
 cd /Users/joydeep.kamdar/Apps/DSA
 
-# Run the first program
-javac -d . src/NodeBasics.java
-java NodeBasics
+# Run the first program (easy way!)
+./run-program.sh NodeBasics
 
 # Run its tests
 ./run-tests.sh NodeBasicsTest
@@ -75,7 +74,12 @@ java NodeBasics
 
 ## 🔥 Commands You'll Use
 
-### Run a Program
+### Run a Program (Easy Way!)
+```bash
+./run-program.sh ProgramName
+```
+
+### Run a Program (Manual Way)
 ```bash
 javac -d . src/ProgramName.java
 java ProgramName
@@ -88,16 +92,20 @@ java ProgramName
 
 ### Examples
 ```bash
-# Program 1
+# Run Program 1
+./run-program.sh NodeBasics
 ./run-tests.sh NodeBasicsTest
 
-# Program 5
+# Run Program 5
+./run-program.sh SinglyLinkedList03
 ./run-tests.sh SinglyLinkedList03Test
 
-# Program 12
+# Run Program 12
+./run-program.sh SinglyLinkedListAlgorithms
 ./run-tests.sh SinglyLinkedListAlgorithmsTest
 
-# Final program
+# Run Final program
+./run-program.sh LinkedListComparison
 ./run-tests.sh LinkedListComparisonTest
 ```
 
@@ -182,8 +190,12 @@ After completing all 17 programs, you will:
 
 ```bash
 cd /Users/joydeep.kamdar/Apps/DSA
-javac -d . src/NodeBasics.java
-java NodeBasics
+./run-program.sh NodeBasics
+```
+
+See all available programs:
+```bash
+./run-program.sh
 ```
 
 **Your LinkedList journey begins with a single node!** 
